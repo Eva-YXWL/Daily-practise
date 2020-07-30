@@ -1,0 +1,8 @@
+#include<stdio.h>
+main()
+{
+float a;
+printf("Input payment p:");
+scanf("%f",&a);
+printf("price = %.1f\n",0.92*a);
+}

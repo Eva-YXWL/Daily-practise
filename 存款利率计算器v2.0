@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<math.h>
+main()
+{
+	int n;
+	double rate,deposit,capital;
+	char W;
+	printf("Input rate, year, capital:");
+	scanf("%lf,%d,%lf",&rate,&n,&capital);
+	printf("Compound interest (Y/N)?");
+	scanf(" %c",&W);
+	if(W=='y'||W=='Y')
+	{
+		deposit = capital*pow(1+rate,n);
+		printf("deposit = %.4f\n",deposit);
+	}
+	if(W=='N'||W=='n')
+	{
+		deposit=capital*(1+rate*n);
+		printf("deposit = %.4f\n",deposit);
+	}
+}

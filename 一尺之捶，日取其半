@@ -1,0 +1,11 @@
+#include<stdio.h>
+#include<math.h>
+main()
+{
+float L,y;
+int D;
+printf("Input length and days:");
+scanf("%f,%d",&L,&D);
+y=L*pow(0.5,D);
+printf("length=%.5f\n",y);
+}
